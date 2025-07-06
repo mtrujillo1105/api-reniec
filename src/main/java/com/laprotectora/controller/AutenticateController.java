@@ -58,7 +58,7 @@ public class AutenticateController {
 			CLResponse respuesta = new CLResponse();
 			respuesta.setCodigo(400);
 			respuesta.setStatus(false);
-			respuesta.setMensaje("Usuario no encontrado");
+			respuesta.setMensaje("Usuario no encontrado" + e);
 			return ResponseEntity.ok(respuesta);
 		}
 
